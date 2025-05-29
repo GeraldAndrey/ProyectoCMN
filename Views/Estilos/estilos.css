@@ -1,0 +1,11 @@
+.ColorTitulo {
+                color: red!important;
+            }
+
+#TamanoTitulo {
+                font-size: 30px;
+            }
+
+h2 {
+                color: green;
+            }
