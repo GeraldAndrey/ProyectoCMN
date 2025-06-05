@@ -1,6 +1,9 @@
+<?php
+    include_once $_SERVER ["DOCUMENT_ROOT"] .'/Curso/Controllers/homeController.php';
+?>
 <!DOCTYPE html>
 <html>
-    #Semana 3
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +26,15 @@
                     <div class="row">
                         <div class="col-12">
                             <form class="form-horizontal m-t-20" id="loginform" action="index.html">
+
+                                <?php
+                                if (isset($_POST["txt"])) {
+                                    echo '<div class="alert alert-waning text-center">';
+                                    echo $_POST["txtmensaje"];
+                                    echo '</div>';
+                                }
+                                ?>
+
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text" id="basic-addon1"><i class="ti-user"></i></span>
